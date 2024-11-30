@@ -10,10 +10,10 @@ public class Primes {
             i++;
         }
         i = 2;
-        while(i < Math.sqrt(n)) {
+        while(i <= Math.sqrt(n)) {
             if(arr[i]) {
                 int j = i * i;
-                while(j < n) {
+                while(j <= n) {
                     arr[j] = false;
                     j += i;
                 }
@@ -24,7 +24,7 @@ public class Primes {
         i = 2;
         int counter = 0;
         System.out.println("Prime numbers up to " + n + ":");
-        while(i < n) {
+        while(i <= n) {
             if(arr[i]) {
                 System.out.println(i);
                 counter++;
